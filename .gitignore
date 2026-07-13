@@ -1,6 +1,10 @@
 ### Folders
 results/
 
+### Files
+*.drawio
+*.png
+
 ### Node
 # Dependencies
 node_modules/

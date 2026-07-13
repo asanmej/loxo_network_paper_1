@@ -17,6 +17,7 @@ pkg <- c(
   "igraph",
   "readr",
   "visNetwork",
+  "htmlwidgets",
   "dplyr"
 )
 
