@@ -155,7 +155,7 @@ spinnglass_neg <- function(edges, nodes, nombre_base, ruta_subcarpeta_estrato) {
                                        directed = FALSE)
   
   # Configuración visual de las conexiones utilizando el valor absoluto para el grosor
-  E(grafo_nivel)$width <- E(grafo_nivel)$weight_abs * 10
+  E(grafo_nivel)$width <- E(grafo_nivel)$weight * 10
   E(grafo_nivel)$color <- ifelse(E(grafo_nivel)$correlation >= 0, "#1f78b4", "#e31a1c")
   
   # Renderizado de la red con el motor visNetwork utilizando ForceAtlas2

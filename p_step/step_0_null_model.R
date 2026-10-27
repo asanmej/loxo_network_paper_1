@@ -14,7 +14,7 @@ if (!dir.exists(path_output)) {
 }
 
 file_list <- list.files(path = path_data,
-                       pattern = "^(2012|2017|2022)_(H|M)_(60-69|70-79|80-89|90)\\.csv$",
+                       pattern = "(2012|2017|2022)_(H|M)_(60-69|70-79|80-89|90)\\.csv$",
                        full.names = TRUE)
 
 seed <- 29101997
@@ -28,7 +28,7 @@ for (file_current in file_list) {
     dir.create(path_folder_group, recursive = TRUE)
   }
   
-  cat("Iniciando calculo del modelo nulo para ", name_group)
+  print(paste("Iniciando calculo del modelo nulo para ", name_group))
   df <- read_csv(file_current, show_col_types = FALSE)
   
   rm_disease <- c(
